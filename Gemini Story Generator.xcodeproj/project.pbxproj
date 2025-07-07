@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		62E5EBF02E1BB1A800B5DB76 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 62E5EBEF2E1BB1A800B5DB76 /* FirebaseAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		62E5EBDA2E1BB01A00B5DB76 /* Gemini Story Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gemini Story Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E5EBF02E1BB1A800B5DB76 /* FirebaseAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Gemini Story Generator";
 			packageProductDependencies = (
+				62E5EBEF2E1BB1A800B5DB76 /* FirebaseAI */,
 			);
 			productName = "Gemini Story Generator";
 			productReference = 62E5EBDA2E1BB01A00B5DB76 /* Gemini Story Generator.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 62E5EBD12E1BB01A00B5DB76;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				62E5EBEE2E1BB1A800B5DB76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 62E5EBDB2E1BB01A00B5DB76 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62E5EBEE2E1BB1A800B5DB76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62E5EBEF2E1BB1A800B5DB76 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62E5EBEE2E1BB1A800B5DB76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62E5EBD22E1BB01A00B5DB76 /* Project object */;
 }
